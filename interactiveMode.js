@@ -16,3 +16,12 @@ function getValue(name, callback) {
     }
   });
 }
+
+getValue("a", (a) => {
+  getValue("b", (b) => {
+    getValue("c", (c) => {
+      console.log(`\nEquation is: (${a}) x^2 + (${b}) x + (${c}) = 0\n`);
+      rl.close();
+    });
+  });
+});
