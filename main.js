@@ -9,4 +9,9 @@ const quadraticEquationSolver = (a, b, c) => {
     const x2 = (-b - sqrtD) / (2 * a);
     return `There are 2 roots\nx1 = ${x1}\nx2 = ${x2}`;
   }
+
+  if (D === 0) {
+    const x1 = -b / (2 * a);
+    return `There is 1 root\nx1 = ${x1}`;
+  }
 };
