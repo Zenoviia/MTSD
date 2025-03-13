@@ -19,3 +19,5 @@ const quadraticEquationSolver = (a, b, c) => {
     return "There are no roots, D < 0";
   }
 };
+
+module.exports = quadraticEquationSolver;
