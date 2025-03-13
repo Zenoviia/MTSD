@@ -27,3 +27,8 @@ fs.access(filePath, fs.constants.F_OK, (err) => {
     );
   }
 });
+
+if (a === 0) {
+  console.log("Error. a can not be equal to 0");
+  process.exit(1);
+}
