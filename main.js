@@ -14,4 +14,8 @@ const quadraticEquationSolver = (a, b, c) => {
     const x1 = -b / (2 * a);
     return `There is 1 root\nx1 = ${x1}`;
   }
+
+  if (D < 0) {
+    return "There are no roots, D < 0";
+  }
 };
