@@ -1,4 +1,4 @@
-const quadraticEquationSolver = require("./main.js");
+const quadraticEquationSolver = require("./quadraticEquationSolver.js");
 
 const fs = require("fs");
 
