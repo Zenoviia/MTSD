@@ -32,3 +32,8 @@ if (a === 0) {
   console.log("Error. a can not be equal to 0");
   process.exit(1);
 }
+
+if (values.length !== 3 || !values.every((val) => !isNaN(Number(val)))) {
+  console.log("invalid file format");
+  process.exit(1);
+}
