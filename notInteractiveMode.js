@@ -34,6 +34,11 @@ fs.access(filePath, fs.constants.F_OK, (err) => {
     process.exit(1);
   }
 
+  if (isNaN(a) || isNaN(b) || isNaN(c)) {
+    console.log("Error. Expected a valid real number, got invalid instead");
+    process.exit(1);
+  }
+
   const functionCall = quadraticEquationSolver(a, b, c);
   console.log(
     `Equation is: (${a}) x^2 + (${b}) x + (${c}) = 0\n`,
